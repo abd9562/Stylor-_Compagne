@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entreprise de Décoration et Aménagement</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+
+  /* Header مع صورة خلفية */
+  header {
+    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600'); /* ضع صورتك هنا */
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 48px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  header p {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  }
+
+  /* Menu des boutons */
+  .menu-container {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .dropbtn {
+    background-color: #616bcf;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover {
+    background-color: #5e62a6;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #eee;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Section Experience */
+  .experience {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .experience h2 {
+    font-size: 32px;
+    color: #817fc7;
+    margin-bottom: 30px;
+  }
+
+  .experience .experience-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .experience .experience-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .experience .experience-item p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  /* Section Features / Services */
+  .features {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .features h2 {
+    font-size: 32px;
+    color: #7f8ec7;
+    margin-bottom: 30px;
+  }
+
+  .features ul {
+    list-style: none;s
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .features ul li {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 220px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .features ul li img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    background-color: #7f92c7;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+   .btn-devis {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+
+  background: linear-gradient(135deg, #7c4d4d, #2c2c2c);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.btn-devis:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  background: linear-gradient(135deg, #5e3737, #1a1a1a);
+}
+  @media(max-width: 768px) {
+    .features ul li {
+      width: 80%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Stylor Design et réalisation</h1>
+  <p>Conception et réalisation d'espaces sur mesure,modernes et élégants</p>
+</header>
+ 
+<form action="https://formspree.io/f/xvzvajlp"method="POST">
+</form>
+
+<!-- Menu des boutons -->
+<div class="menu-container">
+
+  
+
+  <div class="dropdown">
+    <button class="dropbtn">Aménagement & Finition</button>
+    <div class="dropdown-content">
+      <a href="#">Aménagement interieur</a>
+      <a href="#">Choix des Matériaux et mobilier</a>
+      <a href="#">Solutions sur mesure adaptees a chaque projet</a>
+      <a href="#">Éclairage extérieur</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Conception & Design</button>
+    <div class="dropdown-content">
+      <a href="#">Études architecturales</a>
+      <a href="#">Plan 2D</a>
+      <a href="#">Modalisation 3D</a>
+      <a href="#">Design interieur</a>
+      <a href="#">Design exterieur</a>
+      </a>
+      <a href="#">Bureaux</a>
+    </div>
+  </div>
+
+
+  <div class="dropdown">
+    <button class="dropbtn">Réalisation & Travaux</button>
+    <div class="dropdown-content">
+      <a href="#">Construction tous corps d'etat</a>
+      <a href="#">Rénovation & Réhabilitation</a>
+      <a href="#">Suivi et gestion de chantier</a>
+     
+    </div>
+  </div>
+
+
+
+</div>
+ 
+ <a href="contact.html" class="btn-devis">Contactez vous  تواصل معنا</a>
+
+<!-- Section Experience -->
+<div class="experience">
+  <h2>Nos Années d'Expérience</h2>
+  <div class="experience-item">
+    <img src="https://via.placeholder.com/80" alt="Années">
+    <p>10 ans d'expérience</p>
+  </div>
+  <div class="experience-item">
+    <img src="https://via.placeholder.com/80" alt="Projets">
+    <p>56+ projets réalisés</p>
+  </div>
+  <div class="experience-item">
+    <img src="https://via.placeholder.com/80" alt="Clients">
+    <p>43+ clients satisfaits</p>
+  </div>
+</div> 
+
+
+
+<!-- Section Features / Services -->
+<div class="features">
+  <h2>Nos Services</h2>
+  <ul>
+    <li><img src="https://via.placeholder.com/50" alt="Design">Design d'intérieur et extérieur</li>
+    <li><img src="https://via.placeholder.com/50" alt="Aménagement">Aménagement complet des espaces</li>
+    <li><img src="https://via.placeholder.com/50" alt="Mobilier">Mobilier sur mesure</li>
+    <li><img src="https://via.placeholder.com/50" alt="Décoration">Décoration et finitions haut de gamme</li>
+    <li><img src="https://via.placeholder.com/50" alt="Conseils">Conseils personnalisés pour chaque projet</li>
+  </ul>
+</div>
+  
+<footer>
+  &copy; 2026 Entreprise de Décoration et Aménagement | Tous droits réservés
+</footer>
+
+</body>
+</html>
+
