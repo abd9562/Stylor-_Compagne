@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Demande de service</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: linear-gradient(135deg, #2c2c2c, #1333c1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.form-box {
+  background: white;
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* TITLE */
+.form-box h1 {
+  margin-bottom: 10px;
+}
+
+.form-box p {
+  color: gray;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* LANGUAGE SWITCH */
+.lang {
+  margin-bottom: 15px;
+}
+
+.lang button {
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* INPUT */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* LABEL */
+.input-group label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: gray;
+  transition: 0.3s;
+  background: white;
+  padding: 0 5px;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+  top: -8px;
+  font-size: 12px;
+  color: #4d527c;
+}
+
+/* BUTTON */
+button.submit {
+  width: 100%;
+  padding: 12px;
+  background: #1821c9;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.submit:hover {
+  background: #5e3737;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+  <!-- تبديل اللغة -->
+  <div class="lang">
+    <button onclick="setLang('fr')">FR</button>
+    <button onclick="setLang('ar')">AR</button>
+  </div>
+
+  <h1 id="title">Demande de service</h1>
+  <p id="desc">Remplissez le formulaire</p>
+
+<form action="https://formspree.io/f/xvzvajlp" method="POST">
+
+
+    <div class="input-group">
+      <input type="text" name="nom_complet" required >
+      <label id="nameLabel">Nom complet</label>
+    </div>
+
+    <div class="input-group">
+      <input type="text" name="Wilaya" required>
+      <label id="nameLabel">ًWilaya|الولاية</label>
+    </div>
+
+    
+
+    <div class="input-group">
+      <select name="service" required>
+        <option id="chooseService">Choisir service</option>
+        <option>Conception & Design</option>
+        <option>réalisation & Travaux</option>
+        <option>Aménagement & Finition</option>
+      </select>
+    </div>
+
+  
+    <div class="input-group">
+  <input type="text" name="type_propriete" placeholder="Type de propriété | نوع العقار">
+</div>
+
+    <div class="input-group">
+      <input type="tel" name="phone" required>
+      <label>telephone/ رقم الهاتف</label>
+    </div>
+
+     <div class="input-group">
+      <input type="tel" name="WhatsApp" required>
+      <label>WhatsApp/ واتساب</label>
+    </div>
+ 
+
+
+<form action="https://formspree.io/f/xvzvajlp" method="POST">
+
+
+  
+  <input type="text" name="test" placeholder="اكتب شيئًا">
+  <button type="submit">إرسال</button>
+</form>
+
+  </form>
+
+</div>
+
+<script>
+function setLang(lang) {
+  if (lang === 'ar') {
+    document.body.dir = "rtl";
+    document.getElementById("title").innerText = "طلب خدمة";
+    document.getElementById("desc").innerText = "املأ النموذج";
+    document.getElementById("nameLabel").innerText = "الاسم الكامل";
+    document.getElementById("emailLabel").innerText = "البريد الإلكتروني";
+    document.getElementById("msgLabel").innerText = "طلبك";
+    document.getElementById("submitBtn").innerText = "إرسال";
+    
+    } else {
+    document.body.dir = "ltr";
+    document.getElementById("title").innerText = "Demande de service";
+    document.getElementById("desc").innerText = "Remplissez le formulaire";
+    document.getElementById("nameLabel").innerText = "Nom complet";
+    document.getElementById("emailLabel").innerText = "Email";
+    document.getElementById("msgLabel").innerText = "Votre demande";
+    document.getElementById("submitBtn").innerText = "Envoyer";
+  }
+}
+</script>
+
+</body>
+</html>
+
